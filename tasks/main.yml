@@ -65,7 +65,8 @@
   when: >
     ansible_os_family == 'RedHat' and (
       ansible_distribution == 'CentOS' or
-      ansible_distribution == 'RedHat'
+      ansible_distribution == 'RedHat' or
+      ansible_distribution == 'Rocky'
     )
   tags:
     - include-redhat
